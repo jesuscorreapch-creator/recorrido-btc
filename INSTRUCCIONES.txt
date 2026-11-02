@@ -1,0 +1,36 @@
+CONTROL DE RECORRIDOS — PWA
+================================
+
+Incluye:
+- Aplicación web instalable en Android, Windows, macOS y Linux mediante navegador compatible.
+- Funcionamiento sin conexión después de abrirla una primera vez con internet.
+- Almacenamiento local en el dispositivo/navegador.
+- Catálogo de faltas, áreas, evidencias fotográficas, firma y generación/impresión de reportes PDF.
+- Respaldo e importación JSON desde la aplicación.
+
+IMPORTANTE:
+Para instalarla como PWA y activar el modo offline, publica TODA esta carpeta en un alojamiento HTTPS
+(por ejemplo Netlify o GitHub Pages). No basta con abrir index.html desde Archivos o con file://.
+
+ANDROID (Chrome):
+1. Abre la URL HTTPS publicada.
+2. Espera a que termine la primera carga.
+3. Abre el menú ⋮ del navegador.
+4. Pulsa "Instalar aplicación" o "Agregar a pantalla principal".
+5. Confirma. Se abrirá como una app independiente.
+
+WINDOWS / macOS / LINUX (Chrome o Edge):
+1. Abre la URL HTTPS publicada.
+2. En la barra de direcciones, selecciona el icono Instalar, o abre el menú del navegador.
+3. Elige "Instalar Control de Recorridos".
+4. La app aparecerá como aplicación independiente en el equipo.
+
+DATOS:
+- Los registros se guardan localmente en el navegador/dispositivo donde se capturan.
+- No se sincronizan automáticamente entre celular y computadora.
+- Exporta respaldos JSON periódicamente y guárdalos en un lugar seguro.
+- Si borras los datos del sitio/navegador, puedes perder los registros no respaldados.
+
+ACTUALIZAR:
+Cuando publiques una versión nueva, aumenta CACHE_NAME en service-worker.js
+(por ejemplo control-recorridos-v2) para que los dispositivos descarguen los archivos nuevos.
